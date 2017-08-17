@@ -4,6 +4,14 @@ pipeline {
     stage('Build') {
       steps {
         echo 'I am building some code!'
+        ws(dir: 'foo1') {
+          echo 'dfgtdfg'
+        }
+        
+        node(label: 'bar1') {
+          git(url: 'file:///space/mctague/tstrepos/blue-ocean-demo-3', poll: true, changelog: true)
+        }
+        
       }
     }
     stage('Test') {
