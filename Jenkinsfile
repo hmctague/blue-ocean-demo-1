@@ -7,6 +7,7 @@ pipeline {
       }
     }
     stage('Test') {
+      agent { label 'windows' }
       steps {
         parallel(
           "Unit Tests": {
