@@ -23,7 +23,7 @@ pipeline {
             
           },
           "win": {
-            bat 'tst1'
+            bat 'echo hello'
             
           }
         )
