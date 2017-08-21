@@ -34,16 +34,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        parallel(
-          "Deploy": {
-            echo 'Ship It!'
-            
-          },
-          "Win": {
-            bat 'h2'
-            
-          }
-        )
+        echo 'Ship It!'
       }
     }
   }
