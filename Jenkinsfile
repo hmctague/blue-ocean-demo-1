@@ -4,6 +4,10 @@ pipeline {
     stage('Build') {
       steps {
         echo 'I am building some code!'
+        ws(dir: 'foo1') {
+          echo 'dfgtdfg'
+        }
+        
       }
     }
     stage('Test') {
