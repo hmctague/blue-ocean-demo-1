@@ -20,6 +20,10 @@ pipeline {
           "Smoke Tests": {
             echo 'Where There is Smoke there is Fire!!!'
             
+          },
+          "win": {
+            bat 'tst1'
+            
           }
         )
       }
