@@ -34,7 +34,16 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        echo 'Ship It!'
+        parallel(
+          "Deploy": {
+            echo 'Ship It!'
+            
+          },
+          "Win": {
+            bat 'h2'
+            
+          }
+        )
       }
     }
   }
