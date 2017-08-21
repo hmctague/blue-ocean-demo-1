@@ -7,6 +7,7 @@ pipeline {
         ws(dir: 'foo1') {
           echo 'dfgtdfg'
         }
+        
       }
     }
     stage('Test') {
@@ -39,6 +40,11 @@ pipeline {
             
           }
         )
+      }
+    }
+    stage('') {
+      steps {
+        echo 'done'
       }
     }
   }
