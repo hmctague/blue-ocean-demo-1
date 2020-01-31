@@ -4,6 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'I am building some code!'
+        sh 'cat /etc/hosts'
+        sh 'cat README.md'
       }
     }
     stage('Test') {
