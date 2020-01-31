@@ -7,7 +7,6 @@ pipeline {
       }
     }
     stage('Test') {
-      agent { label 'windows' }
       steps {
         parallel(
           "Unit Tests": {
@@ -20,10 +19,6 @@ pipeline {
           },
           "Smoke Tests": {
             echo 'Where There is Smoke there is Fire!!!'
-            
-          },
-          "win": {
-            bat 'echo hello'
             
           }
         )
