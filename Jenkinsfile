@@ -8,6 +8,51 @@ pipeline {
         sh 'cat README.md'
       }
     }
+    stage('Test1') {
+      steps {
+        echo 'Ship It!'
+      }
+    }
+    stage('Test2') {
+      steps {
+        echo 'Ship It!'
+      }
+    }
+    stage('Test3') {
+      steps {
+        echo 'Ship It!'
+      }
+    }
+    stage('Test4') {
+      steps {
+        echo 'Ship It!'
+      }
+    }
+    stage('This is a really long stage name') {
+      steps {
+        echo 'Ship It!'
+      }
+    }
+    stage('Test5') {
+      steps {
+        echo 'Ship It!'
+      }
+    }
+    stage('Test6') {
+      steps {
+        echo 'Ship It!'
+      }
+    }
+    stage('Test7') {
+      steps {
+        echo 'Ship It!'
+      }
+    }
+    stage('Test8') {
+      steps {
+        echo 'Ship It!'
+      }
+    }
     stage('Test') {
       steps {
         parallel(
