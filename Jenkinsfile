@@ -7,6 +7,13 @@ pipeline {
         sh 'cat /etc/hosts'
         sh 'cat README.md'
         sh 'pv -L 30k -q build-20200129210503.log'
+
+        // This displays colors using the 'xterm' ansi color map.
+        ansiColor('xterm') {
+            // Just some echoes to show the ANSI color.
+            stage "\u001B[31mI'm Red\u001B[0m Now not"
+        }
+
       }
     }
     stage('Test1') {
