@@ -7,7 +7,6 @@ pipeline {
         sh 'cat /etc/hosts'
         sh 'cat README.md'
         sh 'pv -L 30k -q build-20200129210503.log'
-        }
       }
     }
     stage('Test1') {
