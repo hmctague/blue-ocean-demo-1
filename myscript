@@ -4,5 +4,8 @@ echo "Hello World"
 
 uname -a
 
+env
+touch hanktst.$(date "+%Y%m%d%H%M%S")
+
 cat /proc/meminfo
 
