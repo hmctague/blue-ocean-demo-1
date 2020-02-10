@@ -7,5 +7,8 @@ uname -a
 env
 touch hanktst.$(date "+%Y%m%d%H%M%S")
 
+mkdir -p build/reports
+cp tests/*.xml build/reports
+
 cat /proc/meminfo
 

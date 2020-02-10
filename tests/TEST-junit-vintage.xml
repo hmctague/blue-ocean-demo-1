@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Vintage" tests="17" skipped="0" failures="0" errors="0" time="0.153" hostname="nsdev-20" timestamp="2020-02-10T15:42:50">
+<properties>
+<property name="XMC_HOME" value="/data2/mctague/ns8.2.x/netsight/build/dist"/>
+<property name="XMC_SRC_HOME" value="/data2/mctague/ns8.2.x/netsight"/>
+<property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+<property name="com.enterasys.netsight.pluginfwk.PluginManager" value="com.enterasys.netsight.api.plugin.NetSightServerPluginManager"/>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.encoding.pkg" value="sun.io"/>
+<property name="file.separator" value="/"/>
+<property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+<property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+<property name="java.class.path" value="/data2/mctague/ns8.2.x/netsight/test/../build/artifacts/junit-platform-console-standalone.jar"/>
+<property name="java.class.version" value="52.0"/>
+<property name="java.endorsed.dirs" value="/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/endorsed"/>
+<property name="java.ext.dirs" value="/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/ext:/usr/java/packages/lib/ext"/>
+<property name="java.home" value="/home/blizzard/mctague/java/jdk1.8.0_101/jre"/>
+<property name="java.io.tmpdir" value="/tmp"/>
+<property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+<property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+<property name="java.runtime.version" value="1.8.0_101-b13"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="1.8"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="http://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+<property name="java.version" value="1.8.0_101"/>
+<property name="java.vm.info" value="mixed mode"/>
+<property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="1.8"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="java.vm.version" value="25.101-b13"/>
+<property name="line.separator" value="
+"/>
+<property name="ns.consoledir" value="/data2/mctague/ns8.2.x/netsight/test/."/>
+<property name="ns.isStandAlone" value="TRUE"/>
+<property name="ns.overridesdir" value="/home/blizzard/mctague/NetSight/Console/Overrides"/>
+<property name="ns.path" value="/home/blizzard/mctague/NetSight"/>
+<property name="ns.serverdir" value="/data2/mctague/ns8.2.x/netsight/build/dist"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Linux"/>
+<property name="os.version" value="4.15.0-36-generic"/>
+<property name="path.separator" value=":"/>
+<property name="snmp.MIBDIRS" value="/data2/mctague/ns8.2.x/netsight/build/dist/appdata/System/mibs"/>
+<property name="snmp.MIBS" value="SNMPv2-SMI:IF-MIB:all"/>
+<property name="snmp.SNMP_PERSISTENT_DIR" value="/data2/mctague/ns8.2.x/netsight/build/dist/appdata/System/mibs/.."/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.class.path" value="/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/resources.jar:/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/rt.jar:/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/sunrsasign.jar:/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/jsse.jar:/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/jce.jar:/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/charsets.jar:/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/jfr.jar:/home/blizzard/mctague/java/jdk1.8.0_101/jre/classes"/>
+<property name="sun.boot.library.path" value="/home/blizzard/mctague/java/jdk1.8.0_101/jre/lib/amd64"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value=""/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="/data2/mctague/ns8.2.x/netsight/test/../build/artifacts/junit-platform-console-standalone.jar -cp /data2/mctague/ns8.2.x/netsight/test/build/classes -cp /data2/mctague/ns8.2.x/netsight/build/artifacts/AppIdCommon.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/AppIdMgr.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/BrowserLauncher2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/Console.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/ExtremeMC.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/InventoryMgr.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/JGo.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/JGoInstruments.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/JGoLayout.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/JGoSVG.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/NacAssessment.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/NacCommon.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/OneView.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/OneViewServer.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/PolicyMgr.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/PolicyWebServiceClient.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/RestconfModels.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/SbiEngine.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/SteelSeries.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/TopologyMgr.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/amazon-kinesis-producer.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/antlr4-runtime.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/aopalliance.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/api-common.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/appidmgr-common.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/asm-debug-all.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/aws-java-sdk-core.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/axiom-api.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/axiom-impl.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/axis2-adb.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/axis2-kernel.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-awt-util.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-bridge.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-css.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-dom.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-ext.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-extension.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-gui-util.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-gvt.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-parser.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-script.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-svg-dom.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-svggen.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-swing.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-transcoder.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-util.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/batik-xml.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/bcpkix-jdk15on.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/bcprov-jdk15on.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/binding.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/bk-client.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/bk-common.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/bsh.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/byte-buddy.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/camunda-engine.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/collections-generic.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/colt.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/common.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-beanutils.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-codec.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-collections.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-compress.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-dbcp.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-fileupload.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-httpclient.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-io.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-lang.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-lang3.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-logging.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-net.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-pool.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commons-pool2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commonui.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/commonweb.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/derby.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/derbyclient.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/derbynet.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/derbytools.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/dnsjava.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/dt.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/dwr.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/easy-rules-core.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/easy-rules-mvel.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/event.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/flowable-engine.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/fontbox.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/forms.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/google-auth-library-credentials.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/google-auth-library-oauth2-http.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/graphql-java.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/graphql-spqr.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/grpc-google-cloud-pubsub-v1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/grpc-google-iam-v1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/guava.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/h2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/hamcrest.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/hibernate-core.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/hibernate-envers.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/hibernate-infinispan.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/httpclient.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/httpcore.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/invmgr-common.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/itext.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-annotations.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-core.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-databind.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-dataformat-xml.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-dataformat-yaml.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-datatype-jaxrs.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-datatype-jdk8.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-datatype-json-org.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-datatype-jsr310.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-datatype-jsr353.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-jaxrs-base.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-jaxrs-json-provider.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-jaxrs-xml-provider.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jackson-module-jaxb-annotations.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jacl.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/java-uuid-generator.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javassist.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javaws.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-annotations-api_1.2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-batch-api_1.0.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-cdi-api-1.2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-concurrency-api_1.0.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-connector-api_1.7.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-ejb-api_3.2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-el-api_3.0.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-el-impl.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-interceptors-api_1.2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-j2eemgmt-api_1.1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jacc-api_1.5.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jaspi-api_1.1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jaxb-api_2.2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jaxrpc-api_1.1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jaxrs-api_2.0.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jaxws-api_2.2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jms-api_2.0.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jpa-2.1-api-1.0.0.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jsf-api_2.2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jsp-api_2.3.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-jstl-api_1.2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-saaj-api_1.3.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-servlet-api_3.1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-transaction-api_1.2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-validation-api-1.1.0.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax-websocket-api_1.1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/javax.inject-api_1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jawr.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jboss-cli-client.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jboss-client.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jcommon.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jedis.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jemmy.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jempbox.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jfreechart.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jhall.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jipijapa-hibernate5-10.0.0.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jlibdiff.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/joda-time.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jolokia-core.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jolokia-jmx.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jsch.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/json-path.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/json-simple.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/json-smart.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/json.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jsonb.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jsonp.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jung-algorithms.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jung-api.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jung-graph-impl.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jung-io.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jung-jai.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/junit-platform-console-standalone.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/junit.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/jython-dev.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/log4j.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/mail.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/mediation-common.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/mediation.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/miglayout.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/mockito-core.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/mvel2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/mybatis.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/mysql-connector-java.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/neethi.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/netSightValves.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/netsightCoreEjbs.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/netsightServerCommon.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/netsightServlet.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/nimbus-jose-jwt.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/nscommonweb.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/nscoreapi.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/nsdbapi.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/nsnative-security.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/nsnative.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/nsswupdater.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/objenesis.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/org-netbeans-swing-outline.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/org.osgi.core.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/outlookbar.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/pdfbox.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/picketbox-4.9.6.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/polmgr-common.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/polmgr-ejb.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/preflight.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/proto-google-cloud-pubsub-v1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/proto-google-common-protos.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/proto-google-iam-v1.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/protobuf.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/quartz-jobs.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/quartz.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/reactive-streams.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/resteasy-client.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/resteasy-jaxrs.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/rocksdbjni.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/san.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/simple-xml.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/skinlf.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/slf4j-api.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/slf4j-log4j12.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/snakeyaml.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/snmp4j.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/snmpapi.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spin.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-aop.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-aspects.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-beans.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-context.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-core.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-expression.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-instrument.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-jdbc.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-jms.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-messaging.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-mock.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-orm.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-oxm.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-remoting.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-test.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-tx.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-web.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-webmvc-portlet.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-webmvc.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/spring-websocket.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/swagger-annotations.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/swinglabs.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/tam-common.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/tam.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/tamMessaging.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/tam_3_1_3.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/tam_test.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/tcljava.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/tftpstats.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/tinyradius.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/topology-common.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/topology.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/trilead-ssh2.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/undertow-core.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/undertow-servlet.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/undertow-websockets.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/validation.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/velocity.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/wizard.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/xmlpull.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/xmpbox.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/xpp3.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/xstream.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/yasson.jar:/data2/mctague/ns8.2.x/netsight/build/artifacts/zip4j.jar:/data2/mctague/ns8.2.x/netsight/build/dist/wildfly/standalone/deployments/Monitor.war/WEB-INF/classes --disable-banner --reports-dir=/data2/mctague/ns8.2.x/netsight/test/reports --select-directory=/data2/mctague/ns8.2.x/netsight/test/build/classes --select-package=com.extreme --select-package=com.enterasys.netsight.util --exclude-tag=integration --exclude-tag=standalone --config=XMC_HOME=/data2/mctague/ns8.2.x/netsight/build/dist --config=LOG_LEVEL=ERROR --config=LOG_PKG=com.extreme.test"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="UTF-8"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value="unknown"/>
+<property name="user.country" value="US"/>
+<property name="user.dir" value="/data2/mctague/ns8.2.x/netsight/test"/>
+<property name="user.home" value="/home/blizzard/mctague"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="mctague"/>
+<property name="user.timezone" value="America/New_York"/>
+</properties>
+<testcase name="test" classname="com.extreme.common.definition.TestL2ServiceData" time="0.048">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestL2ServiceData]/[test:test(com.extreme.common.definition.TestL2ServiceData)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="testVrf" classname="com.extreme.common.definition.TestPreviewRow" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestPreviewRow]/[test:testVrf(com.extreme.common.definition.TestPreviewRow)]
+display-name: testVrf
+]]></system-out>
+</testcase>
+<testcase name="testClip" classname="com.extreme.common.definition.TestPreviewRow" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestPreviewRow]/[test:testClip(com.extreme.common.definition.TestPreviewRow)]
+display-name: testClip
+]]></system-out>
+</testcase>
+<testcase name="testVlan" classname="com.extreme.common.definition.TestPreviewRow" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestPreviewRow]/[test:testVlan(com.extreme.common.definition.TestPreviewRow)]
+display-name: testVlan
+]]></system-out>
+</testcase>
+<testcase name="testL2Service" classname="com.extreme.common.definition.TestPreviewRow" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestPreviewRow]/[test:testL2Service(com.extreme.common.definition.TestPreviewRow)]
+display-name: testL2Service
+]]></system-out>
+</testcase>
+<testcase name="testL3Service" classname="com.extreme.common.definition.TestPreviewRow" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestPreviewRow]/[test:testL3Service(com.extreme.common.definition.TestPreviewRow)]
+display-name: testL3Service
+]]></system-out>
+</testcase>
+<testcase name="test" classname="com.extreme.common.definition.TestServiceApplication" time="0.034">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestServiceApplication]/[test:test(com.extreme.common.definition.TestServiceApplication)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="test" classname="com.extreme.common.definition.TestServiceVlan" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestServiceVlan]/[test:test(com.extreme.common.definition.TestServiceVlan)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="test" classname="com.extreme.common.definition.TestServiceVrf" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestServiceVrf]/[test:test(com.extreme.common.definition.TestServiceVrf)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="test" classname="com.extreme.common.definition.TestServiceDefinition" time="0.013">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestServiceDefinition]/[test:test(com.extreme.common.definition.TestServiceDefinition)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="test" classname="com.extreme.common.definition.TestFeatureSupport" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestFeatureSupport]/[test:test(com.extreme.common.definition.TestFeatureSupport)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="test" classname="com.extreme.common.definition.TestL3ServiceData" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestL3ServiceData]/[test:test(com.extreme.common.definition.TestL3ServiceData)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="test" classname="com.extreme.common.definition.TestVlanData" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestVlanData]/[test:test(com.extreme.common.definition.TestVlanData)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="test" classname="com.extreme.common.definition.TestFabricData" time="0.005">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestFabricData]/[test:test(com.extreme.common.definition.TestFabricData)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="test" classname="com.extreme.common.definition.TestPortTemplateData" time="0.009">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.extreme.common.definition.TestPortTemplateData]/[test:test(com.extreme.common.definition.TestPortTemplateData)]
+display-name: test
+]]></system-out>
+</testcase>
+<testcase name="testValidStrings" classname="com.enterasys.netsight.util.TestMacAddress" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.enterasys.netsight.util.TestMacAddress]/[test:testValidStrings(com.enterasys.netsight.util.TestMacAddress)]
+display-name: testValidStrings
+]]></system-out>
+</testcase>
+<testcase name="testNormalize" classname="com.enterasys.netsight.util.TestMacAddress" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:com.enterasys.netsight.util.TestMacAddress]/[test:testNormalize(com.enterasys.netsight.util.TestMacAddress)]
+display-name: testNormalize
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]
+display-name: JUnit Vintage
+]]></system-out>
+</testsuite>
